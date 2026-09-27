@@ -1,0 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/bash
+set -euo pipefail
+
+self="$(readlink -f "$0")"
+root="$(dirname "$self")"
+exec node "$root/deob.js" "$@"
